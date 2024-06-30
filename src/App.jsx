@@ -15,6 +15,7 @@ function App() {
       <Header
         theme="light"
         style={{
+          overflow: 'hidden',
           position: "sticky",
           top: 0,
           zIndex: 1,
@@ -55,9 +56,9 @@ function App() {
             theme="light"
             mode="horizontal"
             defaultSelectedKeys={window.location.hash.replace("#/", "")}
-            // onClick={({ item, key, keyPath, domEvent }) => {
-            //   console.log('dddddddd', item, key, keyPath, domEvent);
-            // }}
+          // onClick={({ item, key, keyPath, domEvent }) => {
+          //   console.log('dddddddd', item, key, keyPath, domEvent);
+          // }}
           >
             <Menu.Item key="APS">
               <Link to="/APS">首页</Link>
